@@ -44,7 +44,7 @@
         </property>
         <property name="image-path" type="string" value="/headless/.config/onepanel-logo.png"/>
         <property name="image-show" type="bool" value="true"/>
-        <property name="image-style" type="int" value="0"/>
+        <property name="image-style" type="int" value="5"/>
       </property>
     </property>
   </property>
