@@ -3,7 +3,7 @@ Version=1.0
 Name=JupyterLab
 GenericName=IDE
 Comment=JupyterLab IDE
-Exec=jupyter lab --ip 127.0.0.1 --notebook-dir=/home/onepanel
+Exec=jupyter lab --ip 127.0.0.1 --notebook-dir=/onepanel
 Terminal=true
 X-MultipleArgs=false
 Type=Application
