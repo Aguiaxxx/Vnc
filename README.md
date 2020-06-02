@@ -110,8 +110,5 @@ If you open some graphic/work intensive websites in the Docker container (especi
 
     docker run --shm-size=256m -it -p 6901:6901 -e VNC_RESOLUTION=1920x1080 onepanel/vnc:latest chromium-browser http://map.norsecorp.com/
 
-## How to release
-See **[how-to-release.md](./how-to-release.md)**
-
 ## Acknowledgments
 This repository is a fork of https://github.com/ConSol/docker-headless-vnc-container
