@@ -113,8 +113,5 @@ If you open some graphic/work intensive websites in the Docker container (especi
 ## How to release
 See **[how-to-release.md](./how-to-release.md)**
 
-## Changelog
-The current changelog is provided here: **[changelog.md](./changelog.md)**
-
 ## Acknowledgments
 This repository is a fork of https://github.com/ConSol/docker-headless-vnc-container
