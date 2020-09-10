@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-MAINTAINER Onepanel "support@onepanel.io"
+LABEL maintainer="Onepanel, Inc. <support@onepanel.io>"
 
 USER root
 
