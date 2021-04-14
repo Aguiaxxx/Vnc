@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM onepanel/dl:v0.20.0
 LABEL maintainer="Onepanel, Inc. <support@onepanel.io>"
 
 USER root
@@ -49,10 +49,16 @@ RUN $INST_SCRIPTS/chrome.sh
 RUN $INST_SCRIPTS/xfce_ui.sh
 ADD ./src/common/xfce/ $HOME/
 
+### Install VSCode
+RUN $INST_SCRIPTS/vscode.sh
+
 ### configure startup
 RUN $INST_SCRIPTS/libnss_wrapper.sh
 ADD ./src/common/scripts $STARTUPDIR
 RUN $INST_SCRIPTS/set_user_permission.sh $STARTUPDIR $HOME
+
+RUN pip install onepanel-sdk
+RUN mkdir /headless/jupyterlab
 
 ENTRYPOINT ["/dockerstartup/vnc_startup.sh"]
 CMD ["--wait"]
