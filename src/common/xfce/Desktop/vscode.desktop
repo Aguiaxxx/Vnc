@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Name=Visual Studio Code
+GenericName=Text Editor
+Comment=Code Editing. Redefined.
+Exec=code --no-sandbox --user-data-dir /headless/vscode --unity-launch %F
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=com.visualstudio.code
+Categories=Utility;TextEditor;Development;IDE;
+MimeType=text/plain;inode/directory;application/x-@@NAME@@-workspace;
+StartupWMClass=vscode
+StartupNotify=false
+Actions=new-empty-window;
+Keywords=vscode;
