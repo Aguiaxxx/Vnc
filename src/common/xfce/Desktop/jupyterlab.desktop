@@ -5,7 +5,7 @@ Name=JupyterLab
 GenericName=JupyterLab
 Comment=JupyterLab is the next-generation web-based user interface for Project Jupyter
 Keywords=python;tensorflow;keras
-Exec=bash -c "/usr/bin/env PATH=/opt/conda/bin/jupyter/:$PATH /opt/conda/bin/jupyter lab --allow-root --LabApp.token='' --notebook-dir '/headless/jupyterlab' & sleep 3; chromium-browser http://$HOSTNAME:8888"
+Exec=bash -c "cd /data && /usr/bin/env PATH=/opt/conda/bin/jupyter/:$PATH /opt/conda/bin/jupyter lab --allow-root --LabApp.token='' --notebook-dir '/data' & sleep 3; chromium-browser http://$HOSTNAME:8888"
 Categories=Development;Science;IDE;Qt;
 Icon=chromium-browser
 Terminal=true
